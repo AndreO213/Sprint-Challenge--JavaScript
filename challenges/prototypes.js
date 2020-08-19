@@ -21,11 +21,11 @@ CuboidMaker.prototype.formula = function(){
   this.equation = this.length * this.width * this.height
   return this.equation
 }
-console.log(this.formula())
+console.log(this.formula(3,3,5))
 
 const cubeForm = new CuboidMaker(length,width,height)
 
-console.log(cubeForm(3,3,5))
+console.log(cubeForm.formula(3,3,5))
 /* == Step 3: Surface Area Method ==
   Create another method using CuboidMaker's prototype that returns the surface area of a given cuboid's length, width, and height. 
 

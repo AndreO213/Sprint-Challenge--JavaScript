@@ -24,14 +24,13 @@ myFunction();
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-function sumation(arr){
-  let max = Math.max(arr[0], arr[1]);
-  let min = Math.min(arr[0], arr[1]);
-  let temp = 0;
-  for (var i = min; i <= max; i++) {
-    temp += i;
+function summation(sum){
+  let num = sum;
+  let reset = 0;
+  for (let i = reset; i <= num; i++) {
+    reset += i;
   }
-  return temp;
+  return reset;
 }
 
-console.log(sumation([1,10]))
+console.log(summation([4]))
